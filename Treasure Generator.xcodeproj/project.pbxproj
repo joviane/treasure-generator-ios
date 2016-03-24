@@ -13,6 +13,8 @@
 		832E09F81CA4865700B4BA70 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832E09F61CA4865700B4BA70 /* Main.storyboard */; };
 		832E09FA1CA4865700B4BA70 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 832E09F91CA4865700B4BA70 /* Assets.xcassets */; };
 		832E09FD1CA4865700B4BA70 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 832E09FB1CA4865700B4BA70 /* LaunchScreen.storyboard */; };
+		832E0A061CA4881C00B4BA70 /* TreasureType.m in Sources */ = {isa = PBXBuildFile; fileRef = 832E0A051CA4881C00B4BA70 /* TreasureType.m */; };
+		832E0A081CA48B6B00B4BA70 /* treasure-types.json in Resources */ = {isa = PBXBuildFile; fileRef = 832E0A071CA48B6B00B4BA70 /* treasure-types.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		832E09F91CA4865700B4BA70 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		832E09FC1CA4865700B4BA70 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		832E09FE1CA4865700B4BA70 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		832E0A041CA4881C00B4BA70 /* TreasureType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TreasureType.h; sourceTree = "<group>"; };
+		832E0A051CA4881C00B4BA70 /* TreasureType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TreasureType.m; sourceTree = "<group>"; };
+		832E0A071CA48B6B00B4BA70 /* treasure-types.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "treasure-types.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +67,14 @@
 				832E09F11CA4865700B4BA70 /* AppDelegate.m */,
 				832E09F31CA4865700B4BA70 /* ViewController.h */,
 				832E09F41CA4865700B4BA70 /* ViewController.m */,
+				832E0A041CA4881C00B4BA70 /* TreasureType.h */,
+				832E0A051CA4881C00B4BA70 /* TreasureType.m */,
 				832E09F61CA4865700B4BA70 /* Main.storyboard */,
 				832E09F91CA4865700B4BA70 /* Assets.xcassets */,
 				832E09FB1CA4865700B4BA70 /* LaunchScreen.storyboard */,
 				832E09FE1CA4865700B4BA70 /* Info.plist */,
 				832E09ED1CA4865700B4BA70 /* Supporting Files */,
+				832E0A071CA48B6B00B4BA70 /* treasure-types.json */,
 			);
 			path = "Treasure Generator";
 			sourceTree = "<group>";
@@ -137,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				832E0A081CA48B6B00B4BA70 /* treasure-types.json in Resources */,
 				832E09FD1CA4865700B4BA70 /* LaunchScreen.storyboard in Resources */,
 				832E09FA1CA4865700B4BA70 /* Assets.xcassets in Resources */,
 				832E09F81CA4865700B4BA70 /* Main.storyboard in Resources */,
@@ -152,6 +161,7 @@
 			files = (
 				832E09F51CA4865700B4BA70 /* ViewController.m in Sources */,
 				832E09F21CA4865700B4BA70 /* AppDelegate.m in Sources */,
+				832E0A061CA4881C00B4BA70 /* TreasureType.m in Sources */,
 				832E09EF1CA4865700B4BA70 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -264,7 +274,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Treasure Generator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.decoverri.treasure.Treasure-Generator";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.decoverri.generator.Treasure-Generator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -275,7 +285,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = "Treasure Generator/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.decoverri.treasure.Treasure-Generator";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.decoverri.generator.Treasure-Generator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

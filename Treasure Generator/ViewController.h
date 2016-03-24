@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TreasureType.h"
 
 @interface ViewController : UIViewController
 
